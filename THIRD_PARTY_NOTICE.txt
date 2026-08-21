@@ -1,0 +1,7 @@
+Third-Party Notice
+
+This project is based on / inspired by Marble Roulette by LazyGyu.
+Original repository: https://github.com/lazygyu/roulette
+License: MIT
+
+Retain the original MIT copyright/license notice when redistributing.
