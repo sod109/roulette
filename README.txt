@@ -1,26 +1,31 @@
-﻿Marble Roulette - 웹 배포용
+﻿원본 Marble Roulette + 광고 제거 배포 파일
 
-이 폴더를 그대로 GitHub Pages 같은 정적 웹 호스팅에 올리면 됩니다.
-사용자는 링크만 클릭하면 되며 Node.js/npm/yarn 설치가 필요 없습니다.
+이 ZIP은 원본 LazyGyu Marble Roulette 소스를 GitHub Actions에서 직접 받아
+광고/분석 코드만 제거한 뒤 GitHub Pages에 배포합니다.
 
-GitHub Pages에 올리는 가장 쉬운 방법
-1. GitHub에서 새 저장소를 하나 만듭니다.
-2. 이 ZIP을 풀고 index.html, .nojekyll 파일을 저장소 최상단에 업로드합니다.
-3. 저장소 Settings > Pages로 이동합니다.
-4. Build and deployment에서 Deploy from a branch를 선택합니다.
-5. Branch를 main, folder를 /(root)로 선택하고 Save를 누릅니다.
-6. 발급된 https://계정명.github.io/저장소명/ 주소를 다른 사람에게 전달하면 됩니다.
+원본에서 유지되는 것
+- 인터페이스
+- 맵
+- Box2D 물리
+- 카메라
+- 구슬/이름 기능
+- First / Last 등 기능
 
-현재 버전
-- 설치 불필요
-- 0.53 구슬 하강 속도
-- 두 줄 회전 방해물
-- 원본 Wheel of Fortune 계열 맵 구조
-- 피니쉬에서 첫 결과가 너무 오래 지연되지 않도록 약한 보정
-- 이후 구슬도 오래 끼면 완주 보정
+제거되는 것
+- 시작 전 광고
+- 결과 광고
+- 광고 서버 연결
+- Umami 분석 코드
 
-라이선스/출처
-Original Marble Roulette: LazyGyu
-https://github.com/lazygyu/roulette
-License: MIT
-원본 저작권 및 MIT 라이선스 고지를 유지해야 합니다.
+사용 방법
+1. ZIP 압축을 풉니다.
+2. .github 폴더와 scripts 폴더를 현재 roulette GitHub 저장소 최상단에 업로드합니다.
+3. GitHub 저장소 Settings > Pages로 이동합니다.
+4. Source를 'GitHub Actions'로 변경합니다.
+5. 저장소의 Actions 탭에서 배포 작업이 끝날 때까지 기다립니다.
+6. 기존 https://sod109.github.io/roulette/ 주소로 접속합니다.
+
+중요
+- 원본 저장소: https://github.com/lazygyu/roulette
+- 원본 라이선스: MIT
+- 배포 결과에도 원본 LICENSE를 포함하도록 설정되어 있습니다.
